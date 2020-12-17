@@ -1,0 +1,105 @@
+.shop > section{
+height: 400px;
+width: 92%;
+line-height: 18px;
+
+
+}
+
+
+
+p{
+  
+  font-family: 'Montserrat', sans-serif;
+  height: fit-content;
+  width: fit-content;
+  padding: 0px;
+  margin: 4px;
+}
+
+.shop > h3, .box > h3, .mapbox > h3{
+
+text-align: center;
+color: black;
+font-weight: 700px;
+font-family: 'Montserrat', sans-serif;
+text-shadow: 1.5px 1.5px whitesmoke;
+
+}
+
+.boxfix{
+
+  height: fit-content;
+  width: fit-content;
+}
+
+.boxfix > img {
+
+height: 300px;
+
+
+}
+
+ 
+.chats{
+  background-color: whitesmoke;
+  height: 50px;
+  width: 15%;
+  border-radius: 5%;
+  border: none;
+  
+  text-align: center;
+  box-shadow: 1px 1px 2px 2px whitesmoke;
+  transition: width 1s, height 1s, border-radius 1s ease-in-out; 
+  float: right;
+  
+}
+
+.fa-rocketchat {
+ color: aqua;
+ font-size: 2rem;
+ width: fit-content;
+ height: fit-content;
+ padding: 7px;
+}
+
+.size{
+    
+  width: 250vh;
+  height: 48vh;  
+  
+}
+
+
+footer{
+  text-align: center;
+  padding: 1% 2%;
+  background-color: aqua;
+  position: sticky;
+}
+
+.ficons{
+  margin: 20px 10px;
+  color: whitesmoke;
+}
+
+.ficons:hover{
+  color:black;
+}
+.foot{
+  color: whitesmoke;
+}
+
+.content{
+  background-image: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+}
+
+#carouselExampleIndicators{
+  box-shadow: 3px 3px whitesmoke;
+  transform: translateX(7px);
+}
+
+.button{
+  left : 150px;
+  position: relative;
+}

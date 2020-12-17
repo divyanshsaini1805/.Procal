@@ -1,0 +1,1 @@
+In this view folder we will store the JavaScript and EJS file.

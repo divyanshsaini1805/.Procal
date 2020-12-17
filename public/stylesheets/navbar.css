@@ -1,0 +1,253 @@
+body {
+  background: #b2fefa; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0ed2f7,
+    #b2fefa
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  border-bottom: 2px solid #e5e5e5;
+  position: sticky;
+  top: 0rem;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+nav button {
+  display: none;
+}
+nav .logo {
+  width: 30%;
+  text-align: center;
+  margin-top: 20px;
+}
+nav .logo h1 {
+  color: aqua;
+  font-family: "Days One", sans-serif;
+}
+nav .menu {
+  width: 60%;
+  text-align: center;
+  margin-top: 20px;
+}
+nav .menu ul li {
+  list-style: none;
+  float: left;
+  padding: 10px;
+  margin: 0 20px;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+}
+nav .menu ul:nth-child(2) li {
+  position: relative;
+  top: -8px;
+  left: 140px;
+  color: #757575;
+}
+
+nav .menu ul li a {
+  transition: 0.5s;
+}
+nav .menu ul:hover li a {
+  color: transparent;
+}
+nav .menu ul li:hover a {
+  color: transparent;
+  text-decoration: none;
+}
+
+a {
+  color: black;
+}
+
+nav .menu ul li a:before {
+  content: "";
+  position: absolute;
+  top: 2%;
+  left: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: turquoise;
+  border-radius: 10%;
+  z-index: -1;
+  opacity: 0.25;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: letter-spacing 0.5s, left 0.5s;
+}
+
+nav .menu ul li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  right: 30%;
+  width: 620px;
+  height: 90px;
+  letter-spacing: 50px;
+}
+
+/* nav .menu ul li:nth-child(6n+1) a::before{
+  
+ 
+  
+} */
+
+nav form {
+  position: absolute;
+  width: 60%;
+  left: 25%;
+  top: 65px;
+}
+nav form input {
+  width: 90%;
+  position: relative;
+  top: -45px;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: 0.8s;
+  border-bottom: 2px solid #e5e5e5;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+nav form input::placeholder {
+  font-size: 22px;
+}
+/*js-css*/
+nav form input.expand {
+  transform: scaleX(1);
+  padding: 10px;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+nav form input.expand ~ .fa-search {
+  visibility: hidden;
+}
+nav form input.expand ~ .fa-times {
+  display: block;
+}
+nav form .fa {
+  position: absolute;
+  top: -40px;
+  right: 40px;
+  cursor: pointer;
+  color: #757575;
+}
+.fa-times {
+  display: none;
+}
+section {
+  width: 100%;
+  height: 700px;
+  background: #d5d3c4;
+  display: flex;
+  justify-content: space-around;
+}
+.details,
+.image {
+  width: 50%;
+  padding: 50px;
+  font-size: 20px;
+  color: #5f5a5a;
+}
+h4,
+p {
+  padding: 20px;
+  margin: 20px;
+}
+img {
+  width: 100%;
+}
+@media (max-width: 768px) {
+  nav button {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: aqua;
+  }
+  nav button:before,
+  nav button:after {
+    position: absolute;
+    content: "";
+    background: white;
+    width: 30px;
+    height: 5px;
+    top: 5px;
+    left: 0;
+    transition: 0.5s;
+  }
+  nav button:after {
+    top: 15px;
+  }
+  /* nav button.expand-icon{
+        
+    
+    } */
+  nav button.expand-icon:before,
+  nav button.expand-icon:after {
+    transform: rotate(45deg);
+
+    top: 10px;
+  }
+  nav button.expand-icon:after {
+    transform: rotate(-45deg);
+  }
+
+  nav .logo {
+    font-size: 17px;
+    left: 22%;
+  }
+  nav .menu {
+    position: absolute;
+    width: 100%;
+    height: 0;
+
+    top: 80px;
+    transition: 0.5s;
+    overflow: hidden;
+    z-index: 1;
+  }
+  nav .menu.expand-mobile {
+    height: 700px;
+    background-color: whitesmoke;
+    opacity: 2;
+  }
+  nav .menu ul li {
+    float: right;
+    width: 90%;
+    text-align: left;
+    z-index: 1;
+    background-color: whitesmoke;
+  }
+  nav form {
+    left: 30%;
+    width: 65%;
+  }
+  nav .menu ul:nth-child(2) li {
+    top: 0;
+    left: 0;
+  }
+  h4,
+  p {
+    padding: 0;
+    margin: 0;
+    font-size: initial;
+  }
+}

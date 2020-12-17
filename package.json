@@ -1,0 +1,26 @@
+{
+  "name": "procal",
+  "version": "1.0.0",
+  "description": "Search the necessities in one click",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "DevStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Procal"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "html": "^1.0.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.11.8",
+    "nodemon": "^2.0.6"
+  }
+}
