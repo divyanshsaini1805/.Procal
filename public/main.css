@@ -1,5 +1,6 @@
-@import "stylesheets/navbar.css";
-@import "stylesheets/chat.css";
-@import "stylesheets/map.css";
+@import "/stylesheets/navbar.css";
+@import "/stylesheets/chat.css";
+@import "/stylesheets/map.css";
+
 
 
