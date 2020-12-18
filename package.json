@@ -11,7 +11,7 @@
     "type": "git",
     "url": "Procal"
   },
-  "author": "",
+  "author": "Fardeen Ali",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^8.2.0",
