@@ -39,6 +39,12 @@ input {
   z-index: 5;
 }
 
+.title{
+  padding: 10px;
+  font-size: 4rem;
+  letter-spacing: 3px;
+}
+
 form {
   display: flex;
   align-items: center;
