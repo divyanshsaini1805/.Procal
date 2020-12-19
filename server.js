@@ -6,14 +6,14 @@ const app = express();
 const indexRouter = require('./routes/index')
 const shopRouter = require('./routes/shop')
 const path = require("path")
-const expressLayouts = require("express-ejs-layouts")
+// const expressLayouts = require("express-ejs-layouts")
 
 
 app.set("views", __dirname + "/views");
-app.set('layout', 'layout/layouts')
+// app.set('layout', 'layout/layouts')
 app.set("view engine", "ejs");
 app.use(express.static("public"));
-app.use(expressLayouts);
+// app.use(expressLayouts);
 
 
 // const mongoose = require("mongoose");
