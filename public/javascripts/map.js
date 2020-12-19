@@ -2,7 +2,9 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoiZnJhbmtlbjciLCJhIjoiY2s5aGV3enpyMDd0czNmbXY4YTY3ZnhpeiJ9.CzT4oeEk5Hz6vWAswBBj5A';
 var map = new mapboxgl.Map({
 container: 'map',
-style: 'mapbox://styles/franken7/ckfi2qb4v0ew719nv000b6ib7'
+style: 'mapbox://styles/franken7/ckfi2qb4v0ew719nv000b6ib7',
+center:[77.48849,28.47195],
+zoom:16
 });
  
 map.addControl(
@@ -22,6 +24,7 @@ map.addControl(
     ); 
 
     map.addControl(new mapboxgl.FullscreenControl());
+    map.addControl(new mapboxgl.NavigationControl());
 
     
       

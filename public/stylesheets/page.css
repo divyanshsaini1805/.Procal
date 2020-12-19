@@ -56,7 +56,7 @@ height: 300px;
 }
 
 .fa-rocketchat {
- color: aqua;
+ color:#71c55d;
  font-size: 2rem;
  width: fit-content;
  height: fit-content;
@@ -103,3 +103,16 @@ footer{
   left : 150px;
   position: relative;
 }
+
+.card-body{
+  background-color: #71c55d;
+  
+}
+.card-body h5{
+  color: whitesmoke;
+}
+
+.card-body p{
+  color: whitesmoke;
+}
+
