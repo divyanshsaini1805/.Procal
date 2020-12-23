@@ -4,8 +4,8 @@ width: 92%;
 line-height: 18px;
 
 
-}
 
+}
 
 
 p{
@@ -104,7 +104,7 @@ footer{
   position: relative;
 }
 
-.card-body{
+.card-body {
   background-color: #71c55d;
   
 }
@@ -116,3 +116,8 @@ footer{
   color: whitesmoke;
 }
 
+.carousel-control-next:hover , .carousel-control-prev:hover{
+  background-color: #71c55d;
+  height: 340px;
+   border-radius: 3%;
+}
