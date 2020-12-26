@@ -25,7 +25,7 @@ function chatBox(element){
  
           setTimeout(function(){
              element.classList.toggle("size");
-          },50000); 
+          },5000); 
  });  
 
 }

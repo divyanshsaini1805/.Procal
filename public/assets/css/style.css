@@ -316,6 +316,12 @@ span {
   list-style: none;
 }
 
+.nav-menu ul li:visited{
+
+  color: blue;
+
+}
+
 .nav-menu ul {
   position: absolute;
   display: none;
