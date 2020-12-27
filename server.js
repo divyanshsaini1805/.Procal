@@ -6,7 +6,6 @@ const app = express();
 const indexRouter = require('./routes/index')
 const shopRouter = require('./routes/shop')
 const loginRouter = require('./routes/login')
-const local= require('./routes/shop');
 const path = require("path")
 // const expressLayouts = require("express-ejs-layouts")
 
@@ -34,7 +33,6 @@ app.use(express.static("public"));
 app.use('/', indexRouter);
 app.use('/shops', shopRouter);
 app.use('/login', loginRouter);
-app.use('/login/shops',local)
 
 app.listen(process.env.PORT || 80, () => {
   console.log("Listening at Port 80");
