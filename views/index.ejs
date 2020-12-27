@@ -15,7 +15,7 @@
 		<link rel="stylesheet" href="main.css">
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Days+One&display=swap" rel="stylesheet">
-		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="/main.css">
  
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -71,16 +71,17 @@
 					<li><a href="#" data-text="About">About</a></li>
 					<li><a href="#" data-text="Shop">Shop</a></li>
 					<li><a href="#" data-text="Contact">Contact</a></li>
-					<li>
+					
 					</ul>
-					<!-- <ul>
-						<li><i class="fa fa-user"></i>
-						
-						<form action="/logout?_method=DELETE" >
-							<a><button type="submit">Log Out</button></a>
+					<ul id="">
+						<li id="logout"><h5><i class="fas fa-user-tag"></i> Hi, Fardeen </h5>
+					    <div>
+                         <form action="/logout?_method=DELETE">
+						<a class="sign"><button type="button" class="btn btn-outline-success btn-sm">logout</button></a>
 						</form>
+						</div>
 					</li>
-				</ul> -->
+				</ul>
 			</div>
 			<form action="">
 				<input type="text" id="search" placeholder="Find your Product">
@@ -127,7 +128,7 @@
 					</div>
 					<div class="carousel-item">
 						<div class="card boxfix">
-							<img class="card-img-top" src="Images/bottle.jpg"
+							<img class="card-img-top" src="/Images/bottle.jpg"
 								alt="Card image cap">
 							<div class="card-body" style="height: 180px">
 								<h5 class="card-title" style="text-align: center;">Bottle</h5>
@@ -138,7 +139,7 @@
 						</div>
 					<div class="carousel-item">
 						<div class="card boxfix">
-							<img class="card-img-top" src="Images/cfl.png"
+							<img class="card-img-top" src="/Images/cfl.png"
 								alt="Card image cap">
 							<div class="card-body" style="height: 180px">
 								<h5 class="card-title" style="text-align: center;">CFL</h5>
