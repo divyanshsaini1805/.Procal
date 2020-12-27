@@ -33,7 +33,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride("_method"));
 
-app.get("shops", checkAuthenticated, (req, res) => {
+app.get("/shops", checkAuthenticated, (req, res) => {
   res.render("index.ejs", { name: req.user.name });
 });
 
