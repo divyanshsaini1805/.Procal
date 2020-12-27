@@ -242,3 +242,17 @@ img {
     font-size: initial;
   }
 }
+
+#logout{
+  display: flex;
+  float: right;
+  position: relative;
+  top: -20px;
+  
+}
+
+.sign{
+  position: relative;
+  bottom: 20px;
+}
+

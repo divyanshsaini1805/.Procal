@@ -33,9 +33,11 @@ app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride("_method"));
 
-app.get("shops", checkAuthenticated, (req, res) => {
+app.get("/shops", checkAuthenticated, (req, res) => {
   res.render("index.ejs", { name: req.user.name });
 });
+
+
 
 app.get("/", checkNotAuthenticated, (req, res) => {
   res.render("login.ejs");
@@ -52,7 +54,7 @@ app.post(
 );
 
 app.get("/register", checkNotAuthenticated, (req, res) => {
-  res.render("login");
+  res.render("/login");
 });
 
 app.post("/register", checkNotAuthenticated, async (req, res) => {
@@ -85,7 +87,7 @@ function checkAuthenticated(req, res, next) {
 
 function checkNotAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {
-    return res.redirect("/login/shops");
+    return res.redirect("/shops");
   }
   next();
 }
