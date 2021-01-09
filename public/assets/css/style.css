@@ -16,12 +16,13 @@ h2 {
 }
 
 h4 {
-  color: #000;
-  font-size: 13px;
+  color: rgb(223, 105, 9);
+  font-size: 20px;
   font-weight: 700;
   letter-spacing: 2px;
   text-transform: uppercase;
   line-height: 2;
+  
 }
 
 h5 {
@@ -1110,3 +1111,4 @@ section {
   letter-spacing: 0;
   color: #71c55d;
 }
+

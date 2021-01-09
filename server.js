@@ -31,7 +31,7 @@ app.use(express.static("public"));
 
 
 app.use('/', indexRouter);
-app.use('/shops', shopRouter);
+
 app.use('/login', loginRouter);
 
 app.listen(process.env.PORT || 80, () => {

@@ -35,6 +35,7 @@ app.use(methodOverride("_method"));
 
 app.get("/shops", checkAuthenticated, (req, res) => {
   res.render("index.ejs", { name: req.user.name });
+  console.log(req.user.name)
 });
 
 
@@ -47,7 +48,7 @@ app.post(
   "/login",
   checkNotAuthenticated,
   passport.authenticate("local", {
-    successRedirect: "/shops",
+    successRedirect: "/login/shops",
     failureRedirect: "/login",
     failureFlash: true,
   })
